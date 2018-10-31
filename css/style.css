@@ -1,7 +1,7 @@
-html,body,header, #intro{
+html,body,header, #s-home{
 	height: 100%;
 }
-#intro{
+#s-home{
 	background: url(../img/WEB_BG.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
