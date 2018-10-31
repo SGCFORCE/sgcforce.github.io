@@ -1,0 +1,16 @@
+html,body,header, #intro{
+	height: 100%;
+}
+#intro{
+	background: url(../img/WEB_BG.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.top-nav-collapse{
+	background-color: #42a5f5;
+}
+@media (max-width: 768px) {
+	.navbar:not(.top-nav-collapse){
+		background: #42a5f5;
+	}
+}
