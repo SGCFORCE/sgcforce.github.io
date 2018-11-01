@@ -16,9 +16,14 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/preloader.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <div class="loaderArea">
+     <div class="sloader"></div>
+  </div>
 
   <header>
   	<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
@@ -295,6 +300,14 @@
 	    return false;
 	  });
 	});
+  </script>
+  <script>
+    $(window).on('load', function () {
+      $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.sloader');
+      $loader.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
   </script>
 </body>
 
