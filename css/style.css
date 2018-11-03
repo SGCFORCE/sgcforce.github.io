@@ -14,9 +14,32 @@ html,body,header, #s-home{
 		background: #42a5f5;
 	}
 }
-
-.contact__bot {
-	width: 100%;
-	background-color: #4285F4;
-	padding: 20px;
+.section {
+	padding: 40px 0;
+    border-top: 1px solid #42A5F5;
+}
+.about-tittle {
+	float: left;
+    margin-right: 10px;
+}
+.about-info {
+	padding: 2px 0;
+    opacity: 0.8;
+}
+.opacity-box {
+	font-style: italic;
+	opacity: 0.8;
+}
+.feedback-block .feedback-image {
+	left: 15px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 3px;
+}
+.feedback-block .about-tittle {
+	padding-left: 70px;
+}
+.feedback-block .opacity-box {
+	padding-left: 70px;
 }
