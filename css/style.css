@@ -40,6 +40,15 @@ html,body,header, #s-home{
 .feedback-block .about-tittle {
 	padding-left: 70px;
 }
+.feedback-block .about-info {
+	padding-left: 70px;
+}
+@media screen and (max-width: 991px) {
+	.feedback-block .about-tittle {
+		float: none;
+	}
+}
+
 .feedback-block .opacity-box {
 	padding-left: 70px;
 }
