@@ -1,0 +1,457 @@
+/* Table of Content
+==================================================
+    1.Reset & Basics
+    2.Basic Styles
+    3.Typography and Common style
+    4.Links
+
+
+/* Reset & Basics (Inspired by E. Meyers) */
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+img {
+    display: block;
+    vertical-align: middle;
+    height: auto;
+    max-width: 100%;
+}
+.map img {
+    max-width: none;
+}
+a:focus {
+    outline: 0;
+}
+iframe {
+    width: 100%;
+    border: none;
+    display: inline-block;
+}
+::-moz-selection {
+    background: #111111;
+    color: #ffffff;
+}
+/* End reset & basics (Inspired by E. Meyers) */
+/*Basic Styles*/
+
+
+
+body {
+    background: #1b1b1b;
+    font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*End basic styles*/
+/* Typography and Common style*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+ {
+    font-family: 'Montserrat';
+    margin-bottom:.4rem;
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+}
+
+h1, .h1 {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2, .h2 {
+  font-size: 1.75rem;
+}
+
+h3, .h3 {
+  font-size: 1.65rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+h6, .h6 {
+  font-size: .9375rem;
+  text-transform: uppercase;
+}
+
+.h6{
+    font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+em {
+    font-style: italic;
+}
+
+span{
+    display: inline-block;
+}
+
+p{
+    line-height: 1.6;
+    margin-bottom: 1.875rem;
+}
+
+p span{
+    font-size: inherit;
+}
+
+strong{
+    font-weight: 900;
+}
+
+span.bold{
+    font-weight: 700;
+}
+
+section,
+.section{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.block-content {
+    position: relative;
+    width: 100%;
+}
+
+.front-p {
+    position: relative;
+    z-index: 100;
+}
+
+
+.text-small {
+    font-size: .875rem;
+    color: #333333;
+    line-height: 1.7;
+}
+
+.text-small span{
+    color: #ffffff;
+}
+
+
+.d-block{
+	display: block;
+}
+
+
+input[type]:-moz-placeholder {
+    color: rgba(85,45,35,.5);
+}
+:-moz-placeholder {
+    color: rgba(85,45,35,.5);
+}
+::-moz-placeholder {
+    color: rgba(85,45,35,.5);
+}
+:-ms-input-placeholder {
+    color: rgba(85,45,35,.5);
+}
+::-webkit-input-placeholder {
+    color: rgba(85,45,35,.5);
+}
+
+
+.bg-secondary{
+    background: #111111;
+}
+
+.indent {
+    text-indent: -999px;
+    display: none;
+}
+
+
+/* End typography and common style*/
+
+
+/*Links*/
+
+a,
+.but,
+.but-round,
+input[type="text"],
+.mobile-but .lines:after,
+.mobile-but .lines:before,
+.disable,
+.insta-Feed li a:before,
+.block-logo img
+
+ {
+    transition: 0.4s ease-in-out;;
+-webkit-transition: 0.4s ease-in-out;;
+-moz-transition: 0.4s ease-in-out;;
+    -ms-transition: 0.4s ease-in-out;;
+    -o-transition: 0.4s ease-in-out;;
+}
+
+.block-social li.list-inline-item:not(:last-child) {
+    margin-right: 0.25rem;
+}
+
+.block-social li a{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    opacity: .5;
+}
+
+.block-social.dark li a{
+    color: #333333;
+    border: 2px solid #333333;
+    opacity: 1;
+}
+
+
+.block-social li a:hover{
+    opacity: 1;
+}
+
+
+.block-social.dark li a:hover{
+   color: #444444;
+    border: 2px solid #444444;
+}
+
+
+.divider{
+    padding-top: 12.5rem;
+    padding-bottom: 12.5rem;
+}
+
+
+section.divider.large{
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
+section.main, .main{
+    padding-top: 7.42857rem;
+    padding-bottom: 7.42857rem;
+}
+
+
+
+div[class*="col-"].gap-one-bottom-md, .gap-one-bottom-md{
+    padding-bottom: 4rem;
+}
+
+
+div[class*="col-"].gap-one-top-md, .gap-one-top-md{
+    padding-top: 4rem;
+}
+
+
+div[class*="col-"].gap-double-md, .gap-double-md {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+div[class*="col-"].gap-one-bottom-lg, .gap-one-bottom-lg{
+    padding-bottom: 10rem;
+}
+
+
+div[class*="col-"].gap-one-top-lg, .gap-one-top-lg{
+    padding-top: 10rem;
+}
+
+
+
+div[class*="col-"].gap-double-lg, .gap-double-lg {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+div[class*="col-"].gap-one-bottom-sm, .gap-one-bottom-sm{
+    padding-bottom: 3rem;
+}
+
+
+div[class*="col-"].gap-one-top-sm, .gap-one-top-sm{
+    padding-top: 3rem;
+}
+
+
+div[class*="col-"].gap-double-sm, .gap-double-sm {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+img {
+    margin-bottom: 1.875rem;
+}
+/*End links*/
